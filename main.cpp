@@ -30,13 +30,18 @@ int main(void)
 {
 	litemLL* head = NULL;
 	DLL list;
+
 	list.insert(&head, 1, "Alexander Aardvark", "aa00@aah.au", 4.0);
 	list.insert(&head, 2, "Zachary Zzyzx", "zzzyzx@zyzzx.xyz", 1.0);
 	list.insert(&head, 3, "Bob Bison", "bigboss@ballerboots.biz", 2.0);
 	list.insert(&head, 4, "Christina Cassowary", "ccassowary@czar.cern", 3.0);
-	list.insert(&head, 5, "Wilbert Wildcard", "ww@www.ww.wow", 3.14);
+	list.insert(&head, 7, "Wilbert Wildcard", "ww@www.ww.wow", 3.14);
+	list.insert(&head, 5, "Washington West", "whatever@wherever.com", 3.88);
+
 	head = list.mergeSort(head);
+
 	cout << "Sorted List:" << endl;
 	list.print(head);
+
 	return 0;
 }

@@ -6,6 +6,7 @@ using namespace std;
 
 class DLL {
 private:
+	int listSize;
 
 public:
 	litemLL* merge(litemLL* p, litemLL* q)
@@ -16,24 +17,22 @@ public:
 		if (!q)
 			return p;
 
-		char p1, q1;
-
-		p1 = tolower(p->data->name[1]);
-		q1 = tolower(q->data->name[1]);
-
-		if (p1 < q1)
+		for (int i = 0; i < p->data->name.size() && i < q->data->name.size(); ++i)
 		{
-			p->next = merge(p->next, q);
-			p->next->prev = p;
-			p->prev = NULL;
-			return p;
-		}
-		else
-		{
-			q->next = merge(p, q->next);
-			q->next->prev = q;
-			q->prev = NULL;
-			return q;
+			if (int(tolower(p->data->name[i])) < int(tolower(q->data->name[i])))
+			{
+				p->next = merge(p->next, q);
+				p->next->prev = p;
+				p->prev = NULL;
+				return p;
+			}
+			else if (int(tolower(p->data->name[i])) > int(tolower(q->data->name[i])))
+			{
+				q->next = merge(p, q->next);
+				q->next->prev = q;
+				q->prev = NULL;
+				return q;
+			}
 		}
 	}
 
@@ -77,13 +76,16 @@ public:
 		cout << "Forwards then backwards" << endl;
 		while (head)
 		{
-			cout << head->data->name << " ";
+			cout << head->data->name << ", ";
 			temp = head;
 			head = head->next;
 		}
+
+		cout << endl;
+
 		while (temp)
 		{
-			cout << temp->data->name << " ";
+			cout << temp->data->name << ", ";
 			temp = temp->prev;
 		}
 	}
@@ -107,7 +109,5 @@ public:
 		slow->next = NULL;
 		return temp;
 	}
-
-	void copy()
 
 };

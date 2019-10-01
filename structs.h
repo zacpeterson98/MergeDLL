@@ -1,5 +1,8 @@
 #pragma once
 #include <string>
+using namespace std;
+
+struct litemLL;
 
 struct Record {
 	int id;
@@ -10,8 +13,8 @@ struct Record {
 
 struct llist {
 	int size;
-	litemLL* first;
-	litemLL* last;
+	litemLL * first;
+	litemLL * last;
 };
 
 struct litemLL {
