@@ -1,0 +1,23 @@
+﻿  main.cpp
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(6,13): error C3646:  'name': unknown override specifier
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(6,13): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(7,14): error C3646:  'email': unknown override specifier
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(7,14): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(13,9): error C2143:  syntax error: missing ';' before '*'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(13,9): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(13,16): error C2238:  unexpected token(s) preceding ';'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(14,9): error C2143:  syntax error: missing ';' before '*'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(14,9): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(14,15): error C2238:  unexpected token(s) preceding ';'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(21,1): error C2039:  'name': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(22,1): error C2039:  'name': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(58,1): error C2039:  'name': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(59,1): error C2039:  'email': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(80,1): error C2039:  'name': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\DLL.h(86,1): error C2039:  'name': is not a member of 'Record'
+C:\Users\Zac\source\repos\MergeDLL\MergeDLL\structs.h(4): message :  see declaration of 'Record'
